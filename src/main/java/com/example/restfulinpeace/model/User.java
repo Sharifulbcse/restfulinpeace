@@ -15,6 +15,9 @@ import java.util.Set;
 @Table(name = "users", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
                 "email"
+        }),
+        @UniqueConstraint(columnNames = {
+                "mobile"
         })
 })
 public class User extends DateAudit {
